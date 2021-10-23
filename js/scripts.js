@@ -14,7 +14,7 @@ switch(city) {
         city = 'Жаль, что вы не захотели ввести свой город';
         alert(city);
         break;
-    case year.trim():
+    case city.trim():
         city = 'Жаль, что вы не захотели ввести свой город';
         alert(city);
     break;
