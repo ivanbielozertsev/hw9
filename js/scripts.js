@@ -14,7 +14,7 @@ switch(city) {
         city = 'Жаль, что вы не захотели ввести свой город';
         alert(city);
         break;
-    case city.trim() === '':
+    case '':
         city = 'Жаль, что вы не захотели ввести свой город';
         alert(city);
     break;
@@ -36,7 +36,7 @@ sport = prompt('Какой ваш любимый вид спорта?');
             sport = 'Жаль, что вы не захотели ввести свой любимый вид спорта';
             alert(sport); 
         break;
-        case sport.trim() === '':
+        case '':
             sport = 'Жаль, что вы не захотели ввести свой любимый вид спорта';
             alert(city);
         break;
