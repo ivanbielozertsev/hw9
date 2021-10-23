@@ -2,7 +2,7 @@ let year = prompt('В каком году Вы родились?');
 let age;
 let city;
 let sport;
-if (year === null || isNaN(year) || year <= 0 || year.trim === '') {
+if (year === null || isNaN(year) || year <= 0 || year.trim() === '') {
     age = 'Жаль, что Вы не захотели ввести свой год рождения';
     alert(age)   
     } else { 
