@@ -2,7 +2,7 @@ let year = prompt('В каком году Вы родились?');
 let age;
 let city;
 let sport;
-if (year === null || isNaN(year) || year <= 0) {
+if (year === null || isNaN(year) || year <= 0 || year.trim === '') {
     age = 'Жаль, что Вы не захотели ввести свой год рождения';
     alert(age)   
     } else { 
@@ -11,6 +11,10 @@ if (year === null || isNaN(year) || year <= 0) {
 city = prompt('В каком городе вы живете?');
 switch(city) {
     case null:
+        city = 'Жаль, что вы не захотели ввести свой город';
+        alert(city);
+        break;
+    case year.trim():
         city = 'Жаль, что вы не захотели ввести свой город';
         alert(city);
     break;
@@ -31,7 +35,11 @@ sport = prompt('Какой ваш любимый вид спорта?');
         case null:
             sport = 'Жаль, что вы не захотели ввести свой любимый вид спорта';
             alert(sport); 
-            break;
+        break;
+        case sport.trim():
+            sport = 'Жаль, что вы не захотели ввести свой любимый вид спорта';
+            alert(city);
+        break;
         case 'Футбол':
             sport = 'Круто, хотите стать Шевченко?';
             break;
